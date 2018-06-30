@@ -1,0 +1,56 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add cjstoes --dev
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;C:\Ruby22\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;c:\Program Files\Git\cmd;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;D:\apache-maven-3.2.1\apache-maven-3.2.1\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Java\jdk1.8.0_77\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\nginx-1.11.5;C:\phantomjs-2.1.1-windows\bin;C:\Users\16092927\AppData\Local\SocksCap64;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\Users\16092927\AppData\Roaming\npm;C:\Users\16092927\nginx-1.12.0;C:\Users\16092927\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/cjs-to-es6: tunneling socket could not be established, cause=read ECONNRESET
+      at ClientRequest.onError (C:\Program Files (x86)\Yarn\lib\cli.js:147299:17)
+      at Object.onceWrapper (events.js:315:30)
+      at emitOne (events.js:116:13)
+      at ClientRequest.emit (events.js:211:7)
+      at Socket.socketErrorListener (_http_client.js:387:9)
+      at emitOne (events.js:116:13)
+      at Socket.emit (events.js:211:7)
+      at emitErrorNT (internal/streams/destroy.js:64:8)
+      at _combinedTickCallback (internal/process/next_tick.js:138:11)
+      at process._tickCallback (internal/process/next_tick.js:180:9)
+
+npm manifest: 
+  {
+    "name": "pure",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+      "test": "test"
+    },
+    "scripts": {
+      "start": "npm run build",
+      "build": "pulp browserify --optimise --standalone myBundle --to index.js",
+      "d": "pulp build --optimise --skip-entry-point --to h.js",
+      "to6": "cjs-to-es6 output/",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "elona2011",
+    "license": "ISC",
+    "devDependencies": {
+      "cjs-to-es6": "^1.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

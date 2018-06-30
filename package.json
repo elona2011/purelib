@@ -1,0 +1,21 @@
+{
+  "name": "pureservices",
+  "version": "0.0.3",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "npm run build",
+    "build": "pulp build&& node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "elona2011",
+  "license": "ISC",
+  "devDependencies": {
+    "cjstoes": "0.1.7",
+    "fs-extra": "^6.0.1",
+    "glob": "^7.1.2"
+  }
+}
